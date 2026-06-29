@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlueWave</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="dots" id="dots"></div>
+
+  <nav class="navbar" id="navbar">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M10 2C5.58 2 2 5.58 2 10s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 3.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 9.5c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08C14.71 13.72 12.5 15 10 15z" fill="white"/>
+        </svg>
+      </div>
+      <span class="logo-text">Riani<span>Hilma</span></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#home" class="active"><span class="nav-emoji">🏠</span> Beranda</a></li>
+      <li><a href="#kata"><span class="nav-emoji">✨</span> WOA</a></li>
+      <li><a href="./flowers/flowers-for-someone/index.html" class="cta-btn"><span class="nav-emoji">💐</span> FLOWERS</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <label class="theme-toggle" title="Ganti tema">
+        <input type="checkbox" id="themeToggle" />
+        <div class="toggle-track">
+          <div class="toggle-thumb" id="toggleThumb">☀️</div>
+        </div>
+      </label>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="active"><span>🏠</span> Beranda</a></li>
+      <li><a href="#kata"><span>✨</span> WOA</a></li>
+      <div class="mobile-divider"></div>
+      <li><a href="./flowers/flowers-for-someone/index.html" class="cta-btn"><span>💐</span> FLOWERS</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO SLIDER - gambar doang -->
+  <section class="hero" id="home">
+    <div class="slider">
+      <div class="slide active">
+        <img src="./pictures/riri1.jpeg" alt="Slide 1"/>
+      </div>
+      <div class="slide">
+    <img src="./pictures/riri2.jpeg" alt="Slide 2"/>
+      </div>
+      <div class="slide">
+        <img src="./pictures/riri4.jpeg" alt="Slide 3"/>
+      </div>
+    </div>
+
+    <button class="arrow arrow-prev" id="prevBtn">&#8249;</button>
+    <button class="arrow arrow-next" id="nextBtn">&#8250;</button>
+
+    <div class="slider-dots">
+      <button class="sdot active" data-index="0"></button>
+      <button class="sdot" data-index="1"></button>
+      <button class="sdot" data-index="2"></button>
+    </div>
+
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+  </section>
+
+    <!-- GLASS CARDS SECTION -->
+  <section class="cards-section" id="kata">
+    <div class="section-header">
+      <span class="section-badge">🌊 Riri Cantikkk</span>
+      <h2>Word Of <em>Affirmation</em></h2>
+      <p>Makasi udah bertahan sampai saat ini yaa CANTIKKK :)</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- Card 1 -->
+      <div class="glass-card" data-aos>
+        <div class="card-img-wrap">
+          <img src="./pictures/riri2.jpeg" alt="Lautan Tenang"/>
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🌊</div>
+          <h3>RIANI CANTIK</h3>
+          <p class="text">kenapa aku menggambarkan laut disini cantikk? karena aku tahu karena kamu suka warna biru itu melambangkan sesuatu yang dingin seperti air yang tenang tiada siapapun bisa melukai kamu, dan ya laut itu sangat indah bukan layak nya diri kamu riani namun dilautan yang indah itu terdapat banyak hal mengerikan didalam nya bukan sama seperti trauma yang kamu miliki, i'm just kidding okey </p>
+          <a href="#" class="card-btn">Cantikkk 😁→</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="glass-card card-featured" data-aos>
+        <div class="card-img-wrap">
+          <img src="./pictures/riri3.jpeg" alt="Langit Biru"/>
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">✨</div>
+          <h3>Riani Lucu</h3>
+          <p class="text">kenapa aku menggambarkan bintang disini cantikk? karena menurut aku bintang itu bukan hanya sebuah benda tata surya yang hanya untuk menerangi bumi saja, tetapi dia juga yang membuat bumi menjadi indah layak nya senyuman mu dan aku harap senyuman mu itu abadi karena aku pingin kamu tersenyum tiap hari, even your day is so hard i know everything is so hard but at the end will be fine :)</p>
+          <a href="#" class="card-btn">Lucuuu →</a>
+        </div>
+        <div class="card-badge">⭐ Terpopuler</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="glass-card" data-aos>
+        <div class="card-img-wrap">
+          <img src="./pictures/riri5.jpeg" alt="Bawah Laut"/>
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🐠</div>
+          <h3>Imut</h3>
+          <p class="text">kenapa aku menggambarkan ikan disini? karena kamu tahu jika ikan itu hidup di dalam laut dia punya kebebasan untuk berenang kemanapun yang ia mau tapi kamu harus-hati karena banyak ikan itu sering kali makan ikan nah sama di hidup ini kamu juga harus berhati-hati okeyy apalagi kamu suka asbun wkwkkwk tapi gapapa kok kalo kamu suka asbun gitu intinya kamu gak jaim kalo ketemu orang </p>
+          <a href="#" class="card-btn">Imuttt</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
